@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="user">
+        <img src="image/Background_2.jpg" alt="">
+        <h3>JOANA C. JAGUNOS</h3>
+        <p>BSIT Student</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+<!-- theme toggler  -->
+
+<div id="theme-toggler" class="fas fa-moon"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>JOANA C. JAGUNOS</h3>
+        <p>I'm a 3rd year BSIT Student</p>
+       
+    </div>
+
+    <div class="share">
+        <a href="https://www.facebook.com/joanacamanzo.jagunos" class="fab fa-facebook-f"></a>
+        <a href="https://github.com/joanacj" class="fab fa-github"></a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> me </h1>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/Phone_Background.jpg">
+                </div>
+                <div class="about-col-2">
+                    <p>I'm Joana Jagunos a student at BISU Balilihan Campus taking BS Information
+                       Technology.I lived in Boyog Sur Balilihan Bohol. I'm 20 years old. I want 
+                        to be a motivator and editor someday. </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="experience">
+                            <ul>
+                                <li><span>2022- Current</span><br>UI/UX Design Training at Et</li>
+                                <li><span>2021 - 2022</span><br>Web app Development</li>
+                                <li><span>2019 - 2021</span><br>Building Android/iOS apps</li>
+                                <li><span>2018 - 2019</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="education">
+                            <ul>
+                                <li><span>2023</span><br>Designing Web/App Interfaces</li>
+                                <li><span>2022</span><br>Web app Development</li>
+                                <li><span>2021</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname){
+           for(tablink of tablinks){
+               tablink.classList.remove("active-link");
+           }
+           for(tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+        }
+   
+   
+   </script>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> my <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>web design</h3>
+            <p>Web design encompasses the creation and maintenance of websites. It involves a combination of skills and disciplines, including graphic design, user experience (UX) design, user interface (UI) design, coding, and more.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-paint-brush"></i>
+            <h3>graphic design</h3>
+            <p>Graphic design is the art and practice of planning and projecting ideas and experiences with visual and textual content. It involves a combination of creative skills, aesthetic principles, and technical expertise to communicate messages visually. .</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-mobile"></i>
+            <h3>responsive design</h3>
+            <p>Responsive design is an approach to web design and development that ensures a website or web application adapts and responds gracefully to various devices and screen sizes.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>digital marketing</h3>
+            <p>Digital marketing refers to the use of digital channels, platforms, and technologies to promote and advertise products, services, or brands.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-search-dollar"></i>
+            <h3>SEO marketing</h3>
+            <p>SEO, or Search Engine Optimization, is a critical component of digital marketing that focuses on optimizing websites to improve their visibility in search engine results pages (SERPs)</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-wordpress"></i>
+            <h3>wordpress</h3>
+            <p>WordPress is an open-source platform that allows users to create and customize websites without extensive coding knowledge..</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> my <span>portfolio</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/headingsandparagraph.jpg" alt="">
+            <div class="content">
+                <h2>Headings and Paragraphs</h2>
+                <h3>
+                    <a href="https://github.com/joanacj/Exercise1.git">Visit Now..</a>
+                </h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/reactnative.jpg" alt="">
+            <div class="content">
+                <h2>Activity1-ReactNativeFlowbox</h2>
+                <h3>
+                    <a href="https://github.com/joanacj/Activity1-ReactNativeFlowbox.git">Visit Now..</a>
+                </h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/Project_2.jpg" alt="">
+            <div class="content">
+                <h2>Lists</h2>
+                <h3>
+                    <a href="https://github.com/joanacj/Exercise2.git">Visit Now..</a>
+                </h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/Project_3.jpg" alt="">
+            <div class="content">
+                <h2>CSS Basics</h2>
+                <h3>
+                    <a href="https://github.com/joanacj/Exer7.git">Visit Now..</a>
+                </h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/flatlist.jpg" alt="">
+            <div class="content">
+                <h2>Flatlist</h2>
+                <h3>
+                    <a href="https://github.com/joanacj/Flatlist.git">Visit Now..</a>
+                </h3>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/Project_1.jpg" alt="">
+            <div class="content">
+                <h2>The Box Model</h2>
+                <h3>
+                    <a href="https://github.com/joanacj/Exercise9.git">Visit Now..</a>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> me </h1>
+
+    <form action="https://formspree.io/f/myylvjdg" method="POST">
+        <input type="text" placeholder="your First name" class="box" name="username">
+        <input type="text" placeholder="your Last name" class="box" name="username">
+        <input type="email" placeholder="your email" class="box" name="_replyto">
+        <input type="text" placeholder="subject" class="box" name="message">
+        <textarea class="box" placeholder="your message" id="message" cols="30" rows="10" name="message"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<div class="credits"> created by <span>JOANA C. JAGUNOS</span> | all rights reserved </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
